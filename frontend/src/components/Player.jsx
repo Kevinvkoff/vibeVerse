@@ -1,0 +1,2 @@
+import { Icon } from './Icon'
+export function Player({track,isPlaying,onToggle}){return <footer><button aria-label="Titre en cours" className="album-art"/><div><b>{track.title}</b><small>{track.artist}</small></div><button className="round" aria-label={isPlaying?'Pause':'Lecture'} onClick={onToggle}><Icon name={isPlaying?'pause':'play'}/></button><i/><small>1:12 / {track.duration}</small></footer>}
